@@ -6,11 +6,11 @@ export default function WhiteListIP() {
     const [activeTab, setActiveTab] = useState('add');
   
   return (
-    <section className='flex gap-10'>
+    <section className='flex lg:gap-10'>
         <div>
             <SideNav />
         </div>
-        <div className='py-10  md:pr-10 w-full'>
+        <div className='py-10  md:pr-10 w-full px-2 lg:px-0'>
            <h1 className='text-2xl font-semibold mb-6'>Whitelist IP Management</h1>
             <div className='flex flex-col lg:flex-row gap-10'>
                 <div className='lg:w-2/5'>
@@ -31,13 +31,13 @@ export default function WhiteListIP() {
 
                   {activeTab =='add' &&(
                     <div className='flex flex-col gap-5'>
-                      <div className='flex items-center'>
+                      <div className='flex flex-col md:flex-row md:items-center'>
                         <label htmlFor="">IP Address *</label>
-                        <input type="text" placeholder='192.168.0.1' className='border ml-auto outline-none  border-black px-3 rounded-xl py-1'/>
+                        <input type="text" placeholder='192.168.0.1' className='border md:ml-auto outline-none  border-black px-3 rounded-xl py-1'/>
                       </div>
-                      <div className='flex items-center'>
+                      <div className='flex flex-col md:flex-row md:items-center'>
                         <label htmlFor="">Name <br />(Default: Unknown)</label>
-                        <input type="text" name="" id="" placeholder='Unknown' className='border ml-auto outline-none border-black px-3 rounded-xl py-1'/>
+                        <input type="text" name="" id="" placeholder='Unknown' className='border md:ml-auto outline-none border-black px-3 rounded-xl py-1'/>
                       </div>
                       <button className='bg-[#135E96] text-white px-4 py-2 rounded w-fit'>Add IP</button>
                     </div>
@@ -46,11 +46,11 @@ export default function WhiteListIP() {
 
                   {activeTab === 'unblock' && (
                     <div className='flex flex-col gap-6'>
-                      <div className='flex gap-5 items-center'>
+                      <div className='flex gap-5 flex-col md:flex-row md:items-center'>
                         <label className='whitespace-nowrap'>IP Address *</label>
                         <input
                           type='text'
-                          className='outline-none border py-1 px-4 ml-auto border-black rounded-lg w-2/3'
+                          className='outline-none border py-1 px-4 md:ml-auto border-black rounded-lg w-2/3'
                           placeholder='192.168.0.1'
                         />
                       </div>

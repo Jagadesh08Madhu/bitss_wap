@@ -40,12 +40,12 @@ export default function BlacklistIP() {
 
 
   return (
-    <section className='flex gap-10'>
+    <section className='flex lg:gap-10'>
       <div>
         <SideNav />
       </div>
 
-      <div className='py-10  md:pr-10 w-full'>
+      <div className='py-10  md:pr-10 w-full px-2 lg:px-2'>
         <h1 className='text-2xl font-semibold mb-6'>Blacklist IP Management</h1>
 
         <div className='flex flex-col lg:flex-row gap-10'>

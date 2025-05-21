@@ -7,7 +7,7 @@ export default function WhiteListIPCom() {
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
-    fetch('/blacklistedIP.json')
+    fetch('/blacklistedIP.json') // Consider renaming this to /whitelistedIP.json if applicable
       .then((res) => res.json())
       .then((json) => setData(json))
       .catch((err) => console.error('Failed to load IP data', err));
@@ -17,11 +17,6 @@ export default function WhiteListIPCom() {
     entry.ip.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-    const handleUnblock = (ipToRemove) => {
-    const updatedList = entries.filter(entry => entry.ip !== ipToRemove);
-    setEntries(updatedList);
-  };
-
   const totalPages = Math.ceil(filteredEntries.length / entriesPerPage);
   const indexOfLastEntry = currentPage * entriesPerPage;
   const indexOfFirstEntry = indexOfLastEntry - entriesPerPage;
@@ -29,7 +24,7 @@ export default function WhiteListIPCom() {
 
   const handleChangeEntriesPerPage = (e) => {
     setEntriesPerPage(Number(e.target.value));
-    setCurrentPage(1); // Reset to first page
+    setCurrentPage(1);
   };
 
   const handleNextPage = () => {
@@ -41,9 +36,9 @@ export default function WhiteListIPCom() {
   };
 
   return (
-    <section className='border border-black p-4 overflow-x-scroll'>
+    <section className='border border-black p-4 overflow-x-auto'>
       {/* Top Controls */}
-      <div className='flex flex-col gap-5 md:flex-row justify-between'>
+      <div className='flex flex-col gap-5 md:flex-row justify-between mb-4'>
         <div className='flex items-center gap-2'>
           <p>Show</p>
           <select
@@ -68,32 +63,40 @@ export default function WhiteListIPCom() {
             value={searchTerm}
             onChange={(e) => {
               setSearchTerm(e.target.value);
-              setCurrentPage(1); // Reset to page 1 when searching
+              setCurrentPage(1);
             }}
           />
         </div>
       </div>
 
-      {/* Table Header */}
-      <div className='flex justify-between mt-5 border-b border-black font-semibold'>
-        <h1 className='border w-full p-2'>IP Address</h1>
-        <h1 className='border w-full p-2'>Name</h1>
-        <h1 className='border w-full p-2'>Date</h1>
-      </div>
-
-      {/* Scrollable Table Body */}
-      <div className='h-[400px] overflow-y-scroll'>
-        {currentEntries.length > 0 ? (
-          currentEntries.map((entry, index) => (
-            <div key={index} className='flex justify-between border-b border-gray-300'>
-              <p className='border w-full p-2'>{entry.ip}</p>
-              <p className='border w-full p-2'>{entry.name}</p>
-              <p className='border w-full p-2'>{entry.date}</p>
-            </div>
-          ))
-        ) : (
-          <p className='text-center mt-4 text-gray-500'>No matching IPs found.</p>
-        )}
+      {/* Table */}
+      <div className="overflow-y-scroll max-h-[400px]">
+        <table className="table-auto w-full border border-black">
+          <thead className='bg-gray-100 sticky top-0'>
+            <tr>
+              <th className='border p-2'>IP Address</th>
+              <th className='border p-2'>Name</th>
+              <th className='border p-2'>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            {currentEntries.length > 0 ? (
+              currentEntries.map((entry, index) => (
+                <tr key={index} className='hover:bg-gray-50'>
+                  <td className='border p-2'>{entry.ip}</td>
+                  <td className='border p-2'>{entry.name}</td>
+                  <td className='border p-2'>{entry.date}</td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan={3} className='text-center text-gray-500 py-4'>
+                  No matching IPs found.
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
       </div>
 
       {/* Pagination */}
