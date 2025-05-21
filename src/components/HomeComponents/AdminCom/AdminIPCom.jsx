@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export default function BlackListIPCom() {
+export default function AdminIPIPCom() {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [entriesPerPage, setEntriesPerPage] = useState(50);
@@ -17,11 +17,6 @@ export default function BlackListIPCom() {
     entry.ip.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-    const handleUnblock = (ipToRemove) => {
-    const updatedList = entries.filter(entry => entry.ip !== ipToRemove);
-    setEntries(updatedList);
-  };
-
   const totalPages = Math.ceil(filteredEntries.length / entriesPerPage);
   const indexOfLastEntry = currentPage * entriesPerPage;
   const indexOfFirstEntry = indexOfLastEntry - entriesPerPage;
@@ -29,7 +24,7 @@ export default function BlackListIPCom() {
 
   const handleChangeEntriesPerPage = (e) => {
     setEntriesPerPage(Number(e.target.value));
-    setCurrentPage(1); // Reset to first page
+    setCurrentPage(1);
   };
 
   const handleNextPage = () => {
@@ -41,7 +36,7 @@ export default function BlackListIPCom() {
   };
 
   return (
-    <section className='border border-black p-4 overflow-x-scroll'>
+    <section className='border border-black p-4 overflow-x-auto'>
       {/* Top Controls */}
       <div className='flex flex-col gap-5 md:flex-row justify-between'>
         <div className='flex items-center gap-2'>
@@ -68,58 +63,72 @@ export default function BlackListIPCom() {
             value={searchTerm}
             onChange={(e) => {
               setSearchTerm(e.target.value);
-              setCurrentPage(1); // Reset to page 1 when searching
+              setCurrentPage(1);
             }}
           />
         </div>
       </div>
 
-      {/* Table Header */}
-      <div className='flex justify-between mt-5 border-b border-black font-semibold'>
-        <h1 className='border w-full p-2'>IP Address</h1>
-        <h1 className='border w-full p-2'>Name</h1>
-        <h1 className='border w-full p-2'>Block Level</h1>
-        <h1 className='border w-full p-2'>Date</h1>
-      </div>
-
-      {/* Scrollable Table Body */}
-      <div className='h-[400px] overflow-y-scroll'>
+      {/* Table */}
+      {/* Table */}
+<div className='mt-5'>
+  <div className='max-h-[400px] overflow-y-auto'>
+    <table className='w-full table-auto border border-black'>
+      <thead className='font-semibold sticky -top-1 bg-white z-10'>
+        <tr>
+          <th className='border border-black p-2'>IP Address</th>
+          <th className='border border-black p-2'>Name</th>
+          <th className='border border-black p-2'>Valid Till</th>
+          <th className='border border-black p-2'>Added Date</th>
+          <th className='border border-black p-2'>Failed Login Count</th>
+        </tr>
+      </thead>
+      <tbody>
         {currentEntries.length > 0 ? (
           currentEntries.map((entry, index) => (
-            <div key={index} className='flex justify-between border-b border-gray-300'>
-              <p className='border w-full p-2'>{entry.ip}</p>
-              <p className='border w-full p-2'>{entry.name}</p>
-              <p className='border w-full p-2'>{entry.level}</p>
-              <p className='border w-full p-2'>{entry.date}</p>
-            </div>
+            <tr key={index} className='border border-gray-300'>
+              <td className='border border-black p-2'>{entry.ip}</td>
+              <td className='border border-black p-2'>{entry.name}</td>
+              <td className='border border-black p-2'>{entry.date}</td>
+              <td className='border border-black p-2'>{entry.date}</td>
+              <td className='border border-black p-2'>1</td>
+            </tr>
           ))
         ) : (
-          <p className='text-center mt-4 text-gray-500'>No matching IPs found.</p>
+          <tr>
+            <td colSpan={5} className='text-center text-gray-500 py-4'>
+              No matching IPs found.
+            </td>
+          </tr>
         )}
-      </div>
+      </tbody>
+    </table>
+  </div>
+</div>
 
-      {/* Pagination */}
-      {totalPages > 1 && (
-        <div className='flex justify-center gap-4 mt-4'>
-          <button
-            onClick={handlePrevPage}
-            disabled={currentPage === 1}
-            className='px-3 py-1 bg-gray-200 rounded disabled:opacity-50'
-          >
-            Previous
-          </button>
-          <span>
-            Page {currentPage} of {totalPages}
-          </span>
-          <button
-            onClick={handleNextPage}
-            disabled={currentPage === totalPages}
-            className='px-3 py-1 bg-gray-200 rounded disabled:opacity-50'
-          >
-            Next
-          </button>
-        </div>
-      )}
+{/* Pagination (outside scroll area) */}
+{totalPages > 1 && (
+  <div className='flex justify-center gap-4 mt-4'>
+    <button
+      onClick={handlePrevPage}
+      disabled={currentPage === 1}
+      className='px-3 py-1 bg-gray-200 rounded disabled:opacity-50'
+    >
+      Previous
+    </button>
+    <span>
+      Page {currentPage} of {totalPages}
+    </span>
+    <button
+      onClick={handleNextPage}
+      disabled={currentPage === totalPages}
+      className='px-3 py-1 bg-gray-200 rounded disabled:opacity-50'
+    >
+      Next
+    </button>
+  </div>
+)}
+
     </section>
   );
 }

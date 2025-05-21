@@ -1,21 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MdLockPerson } from "react-icons/md";
 import { useLocation, useNavigate } from 'react-router-dom';
+import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross2 } from "react-icons/rx";
+
 
 export default function SideNav() {
   const navigate = useNavigate();
   const location = useLocation();
+  const [showSideNav ,setShowSideNav] = useState(false)
 
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className='bg-[#1D2327] h-screen w-[200px] flex flex-col items-center py-10'>
+    <section>
+      <div className='md:hidden absolute top-[5px] text-white p-2 bg-[#1D2327]'>
+       <button onClick={() => setShowSideNav(!showSideNav)}>
+          {showSideNav ? <RxCross2 size={24} /> : <RxHamburgerMenu size={24} />}
+        </button>
+      </div>
+    <nav className={`bg-[#1D2327] h-screen w-[200px] md:flex flex-col items-center py-10  top-12 left-0 ${showSideNav ? 'absolute': 'hidden'}`}>
       {/* Header */}
       <div className='flex items-center gap-1 text-white text-lg w-full justify-center py-2 bg-[#2271B1]'>
         <MdLockPerson />
         <p>Bitss Wap</p>
       </div>
 
+      
       {/* Navigation */}
       <div className='mt-5 w-full'>
         <ul className='flex flex-col gap-5 pl-6'>
@@ -52,5 +63,6 @@ export default function SideNav() {
         </ul>
       </div>
     </nav>
+    </section>
   );
 }

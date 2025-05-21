@@ -8,25 +8,36 @@ export default function BlacklistIP() {
   const [name, setName] = useState('');
   const [blockLevel, setBlockLevel] = useState('');
   const [entries, setEntries] = useState([]); 
+  const [unblockIp, setUnblockIp] = useState('');
+
+  const filteredEntries = entries.filter(entry =>
+  entry.ip.toLowerCase().includes(unblockIp.toLowerCase())
+);
+
+  
 
   const handleAddIP = () => {
-    if (!ipAddress.trim()) {
-      alert('IP Address is required');
-      return;
-    }
+  if (!ipAddress.trim()) {
+    alert('IP Address is required');
+    return;
+  }
 
-    const newEntry = {
-      ip: ipAddress,
-      name: name || 'Unknown',
-      level: blockLevel || '3',
-      date: new Date().toLocaleString(),
-    };
-
-    setEntries([newEntry, ...entries]); 
-    setIpAddress('');
-    setName('');
-    setBlockLevel('');
+  const newEntry = {
+    ip: ipAddress,
+    name: name || 'Unknown',
+    level: blockLevel || '3',
+    date: new Date().toLocaleString(),
   };
+
+  const updatedEntries = [newEntry, ...entries];
+  setEntries(updatedEntries);
+
+  console.log('New entries list:', updatedEntries); 
+  setIpAddress('');
+  setName('');
+  setBlockLevel('');
+};
+
 
   return (
     <section className='flex gap-10'>
@@ -34,7 +45,7 @@ export default function BlacklistIP() {
         <SideNav />
       </div>
 
-      <div className='py-10 pr-10 w-full'>
+      <div className='py-10  md:pr-10 w-full'>
         <h1 className='text-2xl font-semibold mb-6'>Blacklist IP Management</h1>
 
         <div className='flex flex-col lg:flex-row gap-10'>
@@ -94,7 +105,7 @@ export default function BlacklistIP() {
                 </div>
                 <button
                   onClick={handleAddIP}
-                  className='bg-blue-600 text-white px-4 py-2 rounded w-fit'
+                  className='bg-[#135E96] text-white px-4 py-2 rounded w-fit'
                 >
                   Add IP
                 </button>
@@ -114,7 +125,7 @@ export default function BlacklistIP() {
                     placeholder='3'
                   />
                 </div>
-                <button className='bg-blue-600 text-white px-4 py-2 rounded w-fit'>Save block level</button>
+                <button className='bg-[#135E96] text-white px-4 py-2 rounded w-fit'>Save block level</button>
               </div>
             )}
 
@@ -128,14 +139,14 @@ export default function BlacklistIP() {
                     placeholder='192.168.0.1'
                   />
                 </div>
-                <button className='bg-blue-600 text-white px-4 py-2 rounded w-fit'>Unblock IP</button>
+                <button className='bg-[#135E96] text-white px-4 py-2 rounded w-fit'>Unblock IP</button>
               </div>
             )}
           </div>
 
           {/* Pass data to BlackListIPCom */}
           <div className='lg:w-3/5'>
-            <BlackListIPCom entries={entries} />
+            <BlackListIPCom  />
           </div>
         </div>
       </div>

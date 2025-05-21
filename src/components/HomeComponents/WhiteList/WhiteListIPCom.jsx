@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export default function BlackListIPCom() {
+export default function WhiteListIPCom() {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [entriesPerPage, setEntriesPerPage] = useState(50);
@@ -78,7 +78,6 @@ export default function BlackListIPCom() {
       <div className='flex justify-between mt-5 border-b border-black font-semibold'>
         <h1 className='border w-full p-2'>IP Address</h1>
         <h1 className='border w-full p-2'>Name</h1>
-        <h1 className='border w-full p-2'>Block Level</h1>
         <h1 className='border w-full p-2'>Date</h1>
       </div>
 
@@ -89,7 +88,6 @@ export default function BlackListIPCom() {
             <div key={index} className='flex justify-between border-b border-gray-300'>
               <p className='border w-full p-2'>{entry.ip}</p>
               <p className='border w-full p-2'>{entry.name}</p>
-              <p className='border w-full p-2'>{entry.level}</p>
               <p className='border w-full p-2'>{entry.date}</p>
             </div>
           ))

@@ -5,7 +5,7 @@ import profile from '../assets/profile.png'
 export default function Navbar() {
   return (
     <section>
-      <nav className='flex items-center justify-between bg-[#1D2327] py-2 px-10 border-b'>
+      <nav className='flex items-center justify-around md:justify-between bg-[#1D2327] py-2 px-10 border-b'>
         <div className='flex items-center text-white gap-5'>
           <div>
             <span className='text-3xl'><FaWordpress/></span>

@@ -6,6 +6,9 @@ import ProtectedRoute from "../components/ProtectedRoute";
 import ForgotPassword from "../components/LoginComponents/ForgotPassword";
 import ResetPassword from "../components/LoginComponents/ResetPassword";
 import BlacklistIP from "../components/HomeComponents/BlacklistIP";
+import WhiteListIP from "../components/HomeComponents/WhiteList/WhiteListIP";
+import AdminIp from "../components/HomeComponents/AdminCom/AdminIP";
+import LoggedInUser from "../components/HomeComponents/LoggedInUser";
 
 
 export const router = createBrowserRouter([
@@ -38,6 +41,18 @@ export const router = createBrowserRouter([
             {
                 path: '/blacklistIP',
                 element: <BlacklistIP/>
+            },
+            {
+                path: '/whitelistIP',
+                element: <WhiteListIP/>
+            },
+            {
+                path:'/adminLoginIP',
+                element:<AdminIp/>
+            },
+            {
+                path: '/loggedInUsers',
+                element:<LoggedInUser/>
             }
         ]
     }

@@ -1,0 +1,1202 @@
+[
+  {
+    "ip": "5.182.246.111",
+    "name": "Testing Entry",
+    "level": 3,
+    "date": "2025-05-14"
+  },
+  {
+    "ip": "249.254.192.43",
+    "name": "Suspicious",
+    "level": 1,
+    "date": "2025-05-12"
+  },
+  {
+    "ip": "114.201.72.19",
+    "name": "Admin Access",
+    "level": 2,
+    "date": "2025-04-23"
+  },
+  {
+    "ip": "180.241.229.39",
+    "name": "Testing Entry",
+    "level": 1,
+    "date": "2025-05-08"
+  },
+  {
+    "ip": "31.43.204.55",
+    "name": "Testing Entry",
+    "level": 1,
+    "date": "2025-04-25"
+  },
+  {
+    "ip": "128.7.228.130",
+    "name": "SpammerBot",
+    "level": 3,
+    "date": "2025-05-17"
+  },
+  {
+    "ip": "177.185.151.114",
+    "name": "Honeypot Hit",
+    "level": 5,
+    "date": "2025-04-23"
+  },
+  {
+    "ip": "79.159.178.212",
+    "name": "SpammerBot",
+    "level": 4,
+    "date": "2025-05-15"
+  },
+  {
+    "ip": "105.42.106.21",
+    "name": "Manual Ban",
+    "level": 5,
+    "date": "2025-05-18"
+  },
+  {
+    "ip": "160.208.85.117",
+    "name": "Testing Entry",
+    "level": 3,
+    "date": "2025-05-15"
+  },
+  {
+    "ip": "234.245.64.125",
+    "name": "Admin Access",
+    "level": 2,
+    "date": "2025-05-04"
+  },
+  {
+    "ip": "40.121.199.251",
+    "name": "Login Attempt",
+    "level": 4,
+    "date": "2025-05-11"
+  },
+  {
+    "ip": "16.242.162.233",
+    "name": "Testing Entry",
+    "level": 3,
+    "date": "2025-04-20"
+  },
+  {
+    "ip": "102.97.139.168",
+    "name": "Admin Access",
+    "level": 1,
+    "date": "2025-05-10"
+  },
+  {
+    "ip": "193.0.112.4",
+    "name": "Honeypot Hit",
+    "level": 3,
+    "date": "2025-05-08"
+  },
+  {
+    "ip": "191.44.125.116",
+    "name": "Admin Access",
+    "level": 4,
+    "date": "2025-04-25"
+  },
+  {
+    "ip": "171.70.76.108",
+    "name": "Admin Access",
+    "level": 1,
+    "date": "2025-04-30"
+  },
+  {
+    "ip": "229.49.118.232",
+    "name": "Admin Access",
+    "level": 1,
+    "date": "2025-05-12"
+  },
+  {
+    "ip": "151.219.68.50",
+    "name": "Unknown",
+    "level": 5,
+    "date": "2025-05-05"
+  },
+  {
+    "ip": "56.99.199.158",
+    "name": "Manual Ban",
+    "level": 3,
+    "date": "2025-04-22"
+  },
+  {
+    "ip": "182.4.41.86",
+    "name": "SpammerBot",
+    "level": 5,
+    "date": "2025-05-03"
+  },
+  {
+    "ip": "236.218.249.65",
+    "name": "Honeypot Hit",
+    "level": 1,
+    "date": "2025-04-24"
+  },
+  {
+    "ip": "109.232.214.16",
+    "name": "Botnet",
+    "level": 5,
+    "date": "2025-05-07"
+  },
+  {
+    "ip": "129.175.108.46",
+    "name": "Honeypot Hit",
+    "level": 3,
+    "date": "2025-04-30"
+  },
+  {
+    "ip": "16.187.158.226",
+    "name": "Botnet",
+    "level": 4,
+    "date": "2025-05-19"
+  },
+  {
+    "ip": "252.203.166.165",
+    "name": "Unknown",
+    "level": 3,
+    "date": "2025-05-05"
+  },
+  {
+    "ip": "46.9.97.57",
+    "name": "Suspicious",
+    "level": 5,
+    "date": "2025-05-11"
+  },
+  {
+    "ip": "243.156.149.126",
+    "name": "Manual Ban",
+    "level": 1,
+    "date": "2025-05-13"
+  },
+  {
+    "ip": "76.104.116.140",
+    "name": "SpammerBot",
+    "level": 5,
+    "date": "2025-04-20"
+  },
+  {
+    "ip": "179.29.108.88",
+    "name": "Login Attempt",
+    "level": 3,
+    "date": "2025-05-17"
+  },
+  {
+    "ip": "154.196.76.81",
+    "name": "Testing Entry",
+    "level": 5,
+    "date": "2025-05-08"
+  },
+  {
+    "ip": "136.100.88.135",
+    "name": "Honeypot Hit",
+    "level": 5,
+    "date": "2025-05-11"
+  },
+  {
+    "ip": "41.106.253.65",
+    "name": "Login Attempt",
+    "level": 1,
+    "date": "2025-04-19"
+  },
+  {
+    "ip": "242.161.67.82",
+    "name": "Unknown",
+    "level": 2,
+    "date": "2025-05-06"
+  },
+  {
+    "ip": "125.32.192.6",
+    "name": "Admin Access",
+    "level": 5,
+    "date": "2025-04-24"
+  },
+  {
+    "ip": "219.14.181.93",
+    "name": "Manual Ban",
+    "level": 4,
+    "date": "2025-04-29"
+  },
+  {
+    "ip": "46.135.121.161",
+    "name": "Admin Access",
+    "level": 1,
+    "date": "2025-04-23"
+  },
+  {
+    "ip": "3.251.76.200",
+    "name": "Login Attempt",
+    "level": 5,
+    "date": "2025-05-16"
+  },
+  {
+    "ip": "127.131.19.250",
+    "name": "Honeypot Hit",
+    "level": 1,
+    "date": "2025-05-05"
+  },
+  {
+    "ip": "172.204.124.250",
+    "name": "Honeypot Hit",
+    "level": 5,
+    "date": "2025-04-25"
+  },
+  {
+    "ip": "122.216.175.93",
+    "name": "Admin Access",
+    "level": 1,
+    "date": "2025-05-06"
+  },
+  {
+    "ip": "186.55.40.145",
+    "name": "Admin Access",
+    "level": 5,
+    "date": "2025-04-22"
+  },
+  {
+    "ip": "64.254.6.119",
+    "name": "Botnet",
+    "level": 2,
+    "date": "2025-04-25"
+  },
+  {
+    "ip": "125.213.168.40",
+    "name": "Botnet",
+    "level": 1,
+    "date": "2025-05-07"
+  },
+  {
+    "ip": "222.122.224.110",
+    "name": "Unknown",
+    "level": 3,
+    "date": "2025-05-16"
+  },
+  {
+    "ip": "164.44.151.48",
+    "name": "Admin Access",
+    "level": 3,
+    "date": "2025-04-22"
+  },
+  {
+    "ip": "202.217.32.124",
+    "name": "SpammerBot",
+    "level": 1,
+    "date": "2025-04-25"
+  },
+  {
+    "ip": "35.150.74.62",
+    "name": "Botnet",
+    "level": 1,
+    "date": "2025-05-15"
+  },
+  {
+    "ip": "21.39.12.101",
+    "name": "Testing Entry",
+    "level": 2,
+    "date": "2025-05-08"
+  },
+  {
+    "ip": "126.98.110.201",
+    "name": "Botnet",
+    "level": 5,
+    "date": "2025-04-22"
+  },
+  {
+    "ip": "12.108.240.189",
+    "name": "Testing Entry",
+    "level": 4,
+    "date": "2025-05-13"
+  },
+  {
+    "ip": "194.121.11.14",
+    "name": "Honeypot Hit",
+    "level": 4,
+    "date": "2025-05-01"
+  },
+  {
+    "ip": "126.185.110.251",
+    "name": "Botnet",
+    "level": 3,
+    "date": "2025-04-29"
+  },
+  {
+    "ip": "208.170.95.69",
+    "name": "Suspicious",
+    "level": 5,
+    "date": "2025-05-05"
+  },
+  {
+    "ip": "202.225.79.186",
+    "name": "Unknown",
+    "level": 5,
+    "date": "2025-04-21"
+  },
+  {
+    "ip": "103.158.60.145",
+    "name": "Botnet",
+    "level": 5,
+    "date": "2025-05-03"
+  },
+  {
+    "ip": "219.254.83.145",
+    "name": "Unknown",
+    "level": 3,
+    "date": "2025-04-19"
+  },
+  {
+    "ip": "201.103.95.243",
+    "name": "Unknown",
+    "level": 5,
+    "date": "2025-04-19"
+  },
+  {
+    "ip": "64.20.75.173",
+    "name": "Admin Access",
+    "level": 5,
+    "date": "2025-05-18"
+  },
+  {
+    "ip": "163.202.143.200",
+    "name": "Botnet",
+    "level": 1,
+    "date": "2025-04-25"
+  },
+  {
+    "ip": "2.97.198.15",
+    "name": "Honeypot Hit",
+    "level": 2,
+    "date": "2025-05-17"
+  },
+  {
+    "ip": "213.145.128.12",
+    "name": "Botnet",
+    "level": 4,
+    "date": "2025-04-30"
+  },
+  {
+    "ip": "187.8.43.42",
+    "name": "Admin Access",
+    "level": 3,
+    "date": "2025-04-28"
+  },
+  {
+    "ip": "49.154.24.69",
+    "name": "Botnet",
+    "level": 4,
+    "date": "2025-05-02"
+  },
+  {
+    "ip": "126.195.100.241",
+    "name": "Manual Ban",
+    "level": 4,
+    "date": "2025-04-28"
+  },
+  {
+    "ip": "77.91.125.164",
+    "name": "Manual Ban",
+    "level": 4,
+    "date": "2025-04-29"
+  },
+  {
+    "ip": "18.200.54.14",
+    "name": "SpammerBot",
+    "level": 3,
+    "date": "2025-05-11"
+  },
+  {
+    "ip": "249.6.153.161",
+    "name": "Unknown",
+    "level": 3,
+    "date": "2025-05-06"
+  },
+  {
+    "ip": "254.69.155.222",
+    "name": "Unknown",
+    "level": 4,
+    "date": "2025-04-25"
+  },
+  {
+    "ip": "85.107.0.181",
+    "name": "Login Attempt",
+    "level": 3,
+    "date": "2025-05-03"
+  },
+  {
+    "ip": "210.33.28.202",
+    "name": "Admin Access",
+    "level": 1,
+    "date": "2025-04-28"
+  },
+  {
+    "ip": "155.215.79.27",
+    "name": "Manual Ban",
+    "level": 5,
+    "date": "2025-05-16"
+  },
+  {
+    "ip": "124.38.24.100",
+    "name": "Manual Ban",
+    "level": 5,
+    "date": "2025-05-10"
+  },
+  {
+    "ip": "204.252.26.221",
+    "name": "SpammerBot",
+    "level": 2,
+    "date": "2025-04-20"
+  },
+  {
+    "ip": "100.220.240.209",
+    "name": "Honeypot Hit",
+    "level": 5,
+    "date": "2025-05-08"
+  },
+  {
+    "ip": "225.110.0.139",
+    "name": "Botnet",
+    "level": 2,
+    "date": "2025-05-03"
+  },
+  {
+    "ip": "54.201.60.236",
+    "name": "SpammerBot",
+    "level": 5,
+    "date": "2025-05-04"
+  },
+  {
+    "ip": "76.71.213.190",
+    "name": "Suspicious",
+    "level": 4,
+    "date": "2025-05-02"
+  },
+  {
+    "ip": "142.35.177.252",
+    "name": "Testing Entry",
+    "level": 2,
+    "date": "2025-04-22"
+  },
+  {
+    "ip": "15.166.240.192",
+    "name": "Login Attempt",
+    "level": 5,
+    "date": "2025-05-05"
+  },
+  {
+    "ip": "95.233.136.227",
+    "name": "Botnet",
+    "level": 5,
+    "date": "2025-05-17"
+  },
+  {
+    "ip": "1.176.50.155",
+    "name": "SpammerBot",
+    "level": 2,
+    "date": "2025-05-02"
+  },
+  {
+    "ip": "44.242.122.162",
+    "name": "Admin Access",
+    "level": 1,
+    "date": "2025-05-08"
+  },
+  {
+    "ip": "164.112.237.189",
+    "name": "Admin Access",
+    "level": 2,
+    "date": "2025-05-08"
+  },
+  {
+    "ip": "130.107.106.60",
+    "name": "SpammerBot",
+    "level": 5,
+    "date": "2025-05-07"
+  },
+  {
+    "ip": "252.209.220.96",
+    "name": "Unknown",
+    "level": 3,
+    "date": "2025-04-27"
+  },
+  {
+    "ip": "250.34.245.155",
+    "name": "Suspicious",
+    "level": 3,
+    "date": "2025-05-08"
+  },
+  {
+    "ip": "217.41.71.209",
+    "name": "Honeypot Hit",
+    "level": 5,
+    "date": "2025-05-02"
+  },
+  {
+    "ip": "113.32.11.170",
+    "name": "Login Attempt",
+    "level": 1,
+    "date": "2025-04-28"
+  },
+  {
+    "ip": "17.171.12.186",
+    "name": "Admin Access",
+    "level": 5,
+    "date": "2025-04-20"
+  },
+  {
+    "ip": "177.190.176.50",
+    "name": "Unknown",
+    "level": 5,
+    "date": "2025-05-01"
+  },
+  {
+    "ip": "188.216.42.138",
+    "name": "Manual Ban",
+    "level": 1,
+    "date": "2025-05-14"
+  },
+  {
+    "ip": "119.168.140.198",
+    "name": "Login Attempt",
+    "level": 5,
+    "date": "2025-05-17"
+  },
+  {
+    "ip": "18.160.107.18",
+    "name": "Unknown",
+    "level": 5,
+    "date": "2025-04-27"
+  },
+  {
+    "ip": "14.111.190.131",
+    "name": "Manual Ban",
+    "level": 5,
+    "date": "2025-04-28"
+  },
+  {
+    "ip": "105.27.144.9",
+    "name": "Honeypot Hit",
+    "level": 5,
+    "date": "2025-05-09"
+  },
+  {
+    "ip": "80.34.248.98",
+    "name": "Testing Entry",
+    "level": 4,
+    "date": "2025-05-08"
+  },
+  {
+    "ip": "154.3.71.200",
+    "name": "Suspicious",
+    "level": 2,
+    "date": "2025-05-13"
+  },
+  {
+    "ip": "18.69.185.143",
+    "name": "Honeypot Hit",
+    "level": 2,
+    "date": "2025-05-08"
+  },
+  {
+    "ip": "36.72.69.183",
+    "name": "Admin Access",
+    "level": 5,
+    "date": "2025-04-30"
+  },
+  {
+    "ip": "109.163.16.201",
+    "name": "Botnet",
+    "level": 5,
+    "date": "2025-04-29"
+  },
+  {
+    "ip": "134.205.78.138",
+    "name": "Manual Ban",
+    "level": 4,
+    "date": "2025-05-07"
+  },
+  {
+    "ip": "243.90.251.194",
+    "name": "Testing Entry",
+    "level": 5,
+    "date": "2025-04-20"
+  },
+  {
+    "ip": "236.178.42.226",
+    "name": "Unknown",
+    "level": 1,
+    "date": "2025-04-25"
+  },
+  {
+    "ip": "153.229.9.174",
+    "name": "Login Attempt",
+    "level": 3,
+    "date": "2025-05-03"
+  },
+  {
+    "ip": "151.5.125.48",
+    "name": "Manual Ban",
+    "level": 3,
+    "date": "2025-05-03"
+  },
+  {
+    "ip": "67.47.244.245",
+    "name": "Testing Entry",
+    "level": 1,
+    "date": "2025-04-30"
+  },
+  {
+    "ip": "153.124.106.21",
+    "name": "Suspicious",
+    "level": 2,
+    "date": "2025-05-06"
+  },
+  {
+    "ip": "157.38.9.62",
+    "name": "Suspicious",
+    "level": 3,
+    "date": "2025-05-09"
+  },
+  {
+    "ip": "236.96.129.240",
+    "name": "SpammerBot",
+    "level": 3,
+    "date": "2025-05-01"
+  },
+  {
+    "ip": "233.229.103.105",
+    "name": "Manual Ban",
+    "level": 1,
+    "date": "2025-04-26"
+  },
+  {
+    "ip": "214.74.4.38",
+    "name": "Honeypot Hit",
+    "level": 4,
+    "date": "2025-04-24"
+  },
+  {
+    "ip": "120.202.150.198",
+    "name": "SpammerBot",
+    "level": 3,
+    "date": "2025-04-21"
+  },
+  {
+    "ip": "143.91.198.189",
+    "name": "Unknown",
+    "level": 3,
+    "date": "2025-04-23"
+  },
+  {
+    "ip": "88.54.109.89",
+    "name": "Honeypot Hit",
+    "level": 1,
+    "date": "2025-05-19"
+  },
+  {
+    "ip": "90.228.172.29",
+    "name": "Login Attempt",
+    "level": 4,
+    "date": "2025-05-10"
+  },
+  {
+    "ip": "162.229.99.220",
+    "name": "Manual Ban",
+    "level": 2,
+    "date": "2025-05-06"
+  },
+  {
+    "ip": "154.222.145.95",
+    "name": "SpammerBot",
+    "level": 1,
+    "date": "2025-04-22"
+  },
+  {
+    "ip": "138.154.89.120",
+    "name": "Login Attempt",
+    "level": 4,
+    "date": "2025-04-29"
+  },
+  {
+    "ip": "253.192.192.1",
+    "name": "Honeypot Hit",
+    "level": 5,
+    "date": "2025-04-26"
+  },
+  {
+    "ip": "63.29.3.205",
+    "name": "Testing Entry",
+    "level": 4,
+    "date": "2025-04-27"
+  },
+  {
+    "ip": "49.40.187.102",
+    "name": "Honeypot Hit",
+    "level": 1,
+    "date": "2025-04-28"
+  },
+  {
+    "ip": "44.217.36.116",
+    "name": "Unknown",
+    "level": 4,
+    "date": "2025-05-15"
+  },
+  {
+    "ip": "187.80.174.210",
+    "name": "Botnet",
+    "level": 5,
+    "date": "2025-05-10"
+  },
+  {
+    "ip": "45.225.176.158",
+    "name": "Testing Entry",
+    "level": 5,
+    "date": "2025-05-18"
+  },
+  {
+    "ip": "58.239.139.170",
+    "name": "Testing Entry",
+    "level": 1,
+    "date": "2025-05-12"
+  },
+  {
+    "ip": "132.228.230.248",
+    "name": "Unknown",
+    "level": 5,
+    "date": "2025-05-07"
+  },
+  {
+    "ip": "57.209.167.58",
+    "name": "Manual Ban",
+    "level": 5,
+    "date": "2025-04-20"
+  },
+  {
+    "ip": "201.122.0.179",
+    "name": "SpammerBot",
+    "level": 5,
+    "date": "2025-04-25"
+  },
+  {
+    "ip": "244.123.239.141",
+    "name": "Suspicious",
+    "level": 1,
+    "date": "2025-04-29"
+  },
+  {
+    "ip": "21.127.204.103",
+    "name": "SpammerBot",
+    "level": 4,
+    "date": "2025-04-25"
+  },
+  {
+    "ip": "171.13.152.186",
+    "name": "Admin Access",
+    "level": 5,
+    "date": "2025-04-19"
+  },
+  {
+    "ip": "111.108.224.115",
+    "name": "Unknown",
+    "level": 5,
+    "date": "2025-05-04"
+  },
+  {
+    "ip": "181.66.49.223",
+    "name": "Login Attempt",
+    "level": 4,
+    "date": "2025-04-24"
+  },
+  {
+    "ip": "199.127.0.205",
+    "name": "Honeypot Hit",
+    "level": 2,
+    "date": "2025-04-30"
+  },
+  {
+    "ip": "84.43.2.44",
+    "name": "Login Attempt",
+    "level": 4,
+    "date": "2025-05-17"
+  },
+  {
+    "ip": "124.235.8.254",
+    "name": "SpammerBot",
+    "level": 2,
+    "date": "2025-04-26"
+  },
+  {
+    "ip": "171.210.167.144",
+    "name": "Admin Access",
+    "level": 5,
+    "date": "2025-05-02"
+  },
+  {
+    "ip": "60.179.71.43",
+    "name": "Manual Ban",
+    "level": 1,
+    "date": "2025-04-19"
+  },
+  {
+    "ip": "211.146.155.133",
+    "name": "Unknown",
+    "level": 2,
+    "date": "2025-04-22"
+  },
+  {
+    "ip": "148.164.200.235",
+    "name": "Suspicious",
+    "level": 3,
+    "date": "2025-04-21"
+  },
+  {
+    "ip": "55.131.39.201",
+    "name": "Login Attempt",
+    "level": 4,
+    "date": "2025-04-28"
+  },
+  {
+    "ip": "88.124.71.123",
+    "name": "Unknown",
+    "level": 2,
+    "date": "2025-05-14"
+  },
+  {
+    "ip": "91.44.163.89",
+    "name": "Unknown",
+    "level": 5,
+    "date": "2025-05-13"
+  },
+  {
+    "ip": "16.134.185.30",
+    "name": "Suspicious",
+    "level": 1,
+    "date": "2025-04-29"
+  },
+  {
+    "ip": "53.190.96.188",
+    "name": "Unknown",
+    "level": 5,
+    "date": "2025-04-25"
+  },
+  {
+    "ip": "126.121.169.115",
+    "name": "Login Attempt",
+    "level": 2,
+    "date": "2025-05-11"
+  },
+  {
+    "ip": "81.125.178.75",
+    "name": "Unknown",
+    "level": 4,
+    "date": "2025-05-09"
+  },
+  {
+    "ip": "188.145.57.41",
+    "name": "Testing Entry",
+    "level": 2,
+    "date": "2025-05-19"
+  },
+  {
+    "ip": "12.210.184.24",
+    "name": "Manual Ban",
+    "level": 2,
+    "date": "2025-04-19"
+  },
+  {
+    "ip": "101.247.14.83",
+    "name": "Manual Ban",
+    "level": 4,
+    "date": "2025-04-23"
+  },
+  {
+    "ip": "132.219.242.186",
+    "name": "Testing Entry",
+    "level": 4,
+    "date": "2025-05-08"
+  },
+  {
+    "ip": "242.56.11.153",
+    "name": "Testing Entry",
+    "level": 4,
+    "date": "2025-05-04"
+  },
+  {
+    "ip": "18.69.188.222",
+    "name": "SpammerBot",
+    "level": 4,
+    "date": "2025-05-09"
+  },
+  {
+    "ip": "120.136.165.163",
+    "name": "Unknown",
+    "level": 3,
+    "date": "2025-05-18"
+  },
+  {
+    "ip": "232.216.192.63",
+    "name": "Botnet",
+    "level": 4,
+    "date": "2025-05-12"
+  },
+  {
+    "ip": "134.204.115.247",
+    "name": "Suspicious",
+    "level": 1,
+    "date": "2025-05-15"
+  },
+  {
+    "ip": "247.59.232.118",
+    "name": "Honeypot Hit",
+    "level": 5,
+    "date": "2025-05-17"
+  },
+  {
+    "ip": "198.10.225.39",
+    "name": "Login Attempt",
+    "level": 3,
+    "date": "2025-05-07"
+  },
+  {
+    "ip": "136.59.230.13",
+    "name": "Honeypot Hit",
+    "level": 4,
+    "date": "2025-05-12"
+  },
+  {
+    "ip": "154.95.56.135",
+    "name": "Suspicious",
+    "level": 5,
+    "date": "2025-05-06"
+  },
+  {
+    "ip": "40.228.174.41",
+    "name": "Login Attempt",
+    "level": 3,
+    "date": "2025-04-27"
+  },
+  {
+    "ip": "193.33.194.55",
+    "name": "Admin Access",
+    "level": 1,
+    "date": "2025-05-14"
+  },
+  {
+    "ip": "159.132.49.45",
+    "name": "Unknown",
+    "level": 1,
+    "date": "2025-05-12"
+  },
+  {
+    "ip": "246.187.160.26",
+    "name": "Suspicious",
+    "level": 3,
+    "date": "2025-05-10"
+  },
+  {
+    "ip": "205.237.23.214",
+    "name": "Testing Entry",
+    "level": 5,
+    "date": "2025-04-26"
+  },
+  {
+    "ip": "6.173.215.157",
+    "name": "Botnet",
+    "level": 2,
+    "date": "2025-04-22"
+  },
+  {
+    "ip": "47.208.191.220",
+    "name": "SpammerBot",
+    "level": 5,
+    "date": "2025-05-08"
+  },
+  {
+    "ip": "57.139.249.249",
+    "name": "Botnet",
+    "level": 5,
+    "date": "2025-05-15"
+  },
+  {
+    "ip": "169.89.102.30",
+    "name": "SpammerBot",
+    "level": 1,
+    "date": "2025-05-06"
+  },
+  {
+    "ip": "109.186.76.116",
+    "name": "Honeypot Hit",
+    "level": 3,
+    "date": "2025-04-22"
+  },
+  {
+    "ip": "44.65.217.5",
+    "name": "SpammerBot",
+    "level": 1,
+    "date": "2025-05-19"
+  },
+  {
+    "ip": "20.216.136.160",
+    "name": "Admin Access",
+    "level": 1,
+    "date": "2025-05-16"
+  },
+  {
+    "ip": "89.154.47.153",
+    "name": "Botnet",
+    "level": 1,
+    "date": "2025-05-03"
+  },
+  {
+    "ip": "128.180.187.25",
+    "name": "Admin Access",
+    "level": 5,
+    "date": "2025-05-03"
+  },
+  {
+    "ip": "247.9.224.36",
+    "name": "SpammerBot",
+    "level": 4,
+    "date": "2025-05-11"
+  },
+  {
+    "ip": "227.110.64.255",
+    "name": "Manual Ban",
+    "level": 3,
+    "date": "2025-04-21"
+  },
+  {
+    "ip": "53.57.126.1",
+    "name": "Botnet",
+    "level": 2,
+    "date": "2025-04-29"
+  },
+  {
+    "ip": "135.115.255.103",
+    "name": "Botnet",
+    "level": 1,
+    "date": "2025-05-10"
+  },
+  {
+    "ip": "22.29.42.130",
+    "name": "Honeypot Hit",
+    "level": 4,
+    "date": "2025-04-22"
+  },
+  {
+    "ip": "171.182.49.64",
+    "name": "Botnet",
+    "level": 5,
+    "date": "2025-05-01"
+  },
+  {
+    "ip": "61.18.106.13",
+    "name": "Manual Ban",
+    "level": 3,
+    "date": "2025-04-26"
+  },
+  {
+    "ip": "171.191.184.129",
+    "name": "Testing Entry",
+    "level": 1,
+    "date": "2025-05-02"
+  },
+  {
+    "ip": "74.221.0.159",
+    "name": "Admin Access",
+    "level": 3,
+    "date": "2025-05-07"
+  },
+  {
+    "ip": "68.150.144.187",
+    "name": "Honeypot Hit",
+    "level": 4,
+    "date": "2025-05-18"
+  },
+  {
+    "ip": "226.74.201.133",
+    "name": "Admin Access",
+    "level": 5,
+    "date": "2025-04-22"
+  },
+  {
+    "ip": "135.13.77.228",
+    "name": "SpammerBot",
+    "level": 1,
+    "date": "2025-05-17"
+  },
+  {
+    "ip": "54.107.140.83",
+    "name": "Suspicious",
+    "level": 5,
+    "date": "2025-05-06"
+  },
+  {
+    "ip": "214.222.210.79",
+    "name": "Botnet",
+    "level": 2,
+    "date": "2025-05-18"
+  },
+  {
+    "ip": "207.169.137.70",
+    "name": "Suspicious",
+    "level": 5,
+    "date": "2025-04-19"
+  },
+  {
+    "ip": "40.67.165.33",
+    "name": "Testing Entry",
+    "level": 4,
+    "date": "2025-05-12"
+  },
+  {
+    "ip": "138.72.237.165",
+    "name": "Suspicious",
+    "level": 2,
+    "date": "2025-04-25"
+  },
+  {
+    "ip": "29.227.111.15",
+    "name": "Manual Ban",
+    "level": 1,
+    "date": "2025-05-18"
+  },
+  {
+    "ip": "6.9.95.180",
+    "name": "Unknown",
+    "level": 2,
+    "date": "2025-04-29"
+  },
+  {
+    "ip": "205.212.48.9",
+    "name": "Admin Access",
+    "level": 5,
+    "date": "2025-05-12"
+  },
+  {
+    "ip": "150.14.242.196",
+    "name": "Manual Ban",
+    "level": 5,
+    "date": "2025-05-01"
+  },
+  {
+    "ip": "196.246.233.96",
+    "name": "Testing Entry",
+    "level": 3,
+    "date": "2025-04-22"
+  },
+  {
+    "ip": "220.141.73.250",
+    "name": "Login Attempt",
+    "level": 4,
+    "date": "2025-05-08"
+  },
+  {
+    "ip": "43.38.132.161",
+    "name": "Login Attempt",
+    "level": 2,
+    "date": "2025-04-23"
+  },
+  {
+    "ip": "127.140.216.50",
+    "name": "Admin Access",
+    "level": 3,
+    "date": "2025-05-07"
+  }
+]
