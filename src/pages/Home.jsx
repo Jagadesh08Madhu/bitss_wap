@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SideNav from '../shared/SideNav';
+import { FaEye } from "react-icons/fa";
+import { FaRegEyeSlash } from "react-icons/fa6";
+
 
 export default function Home() {
+  const [showPassword , setShowPassword] = useState(false)
   return (
     <section className='flex lg:gap-10'>
       <div>
@@ -20,6 +24,25 @@ export default function Home() {
               className='border border-black rounded-lg  outline-none py-1 px-3 flex-1'
             />
           </div>
+
+          {/* Password */}
+          <div className='flex flex-col md:flex-row lg:items-center gap-3'>
+            <label className='w-64'>Password</label>
+            <div className='relative flex-1'>
+              <input
+                type={showPassword ? 'text' : 'password'}
+                className='border border-black rounded-lg outline-none py-1 px-3 w-full'
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className='absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-700'
+              >
+                {showPassword ? <FaRegEyeSlash /> : <FaEye />}
+              </button>
+            </div>
+          </div>
+
 
           {/* License Key */}
           <div className='flex flex-col md:flex-row lg:items-center gap-3 '>

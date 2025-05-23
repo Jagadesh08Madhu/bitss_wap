@@ -31,11 +31,11 @@ export default function WhiteListIP() {
 
                   {activeTab =='add' &&(
                     <div className='flex flex-col gap-5'>
-                      <div className='flex flex-col md:flex-row md:items-center'>
+                      <div className='flex flex-col gap-2 md:flex-row md:items-center'>
                         <label htmlFor="">IP Address *</label>
                         <input type="text" placeholder='192.168.0.1' className='border md:ml-auto outline-none  border-black px-3 rounded-xl py-1'/>
                       </div>
-                      <div className='flex flex-col md:flex-row md:items-center'>
+                      <div className='flex flex-col gap-2 md:flex-row md:items-center'>
                         <label htmlFor="">Name <br />(Default: Unknown)</label>
                         <input type="text" name="" id="" placeholder='Unknown' className='border md:ml-auto outline-none border-black px-3 rounded-xl py-1'/>
                       </div>
@@ -46,7 +46,7 @@ export default function WhiteListIP() {
 
                   {activeTab === 'unblock' && (
                     <div className='flex flex-col gap-6'>
-                      <div className='flex gap-5 flex-col md:flex-row md:items-center'>
+                      <div className='flex flex-col gap-2 md:flex-row md:items-center'>
                         <label className='whitespace-nowrap'>IP Address *</label>
                         <input
                           type='text'

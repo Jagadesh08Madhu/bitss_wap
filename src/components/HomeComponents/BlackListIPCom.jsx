@@ -36,7 +36,7 @@ export default function BlackListIPCom() {
   };
 
   return (
-    <section className='border border-black p-4 overflow-x-auto'>
+    <section className='border z-0 border-black p-4 overflow-x-auto'>
       {/* Top Controls */}
       <div className='flex flex-col gap-5 md:flex-row justify-between mb-4'>
         <div className='flex items-center gap-2'>

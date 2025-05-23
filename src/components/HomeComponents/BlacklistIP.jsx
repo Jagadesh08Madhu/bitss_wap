@@ -73,33 +73,33 @@ export default function BlacklistIP() {
 
             {activeTab === 'add' && (
               <div className='flex flex-col gap-6'>
-                <div className='flex gap-5 items-center'>
+                <div className='flex flex-col md:flex-row gap-2 md:items-center'>
                   <label className='whitespace-nowrap'>IP Address *</label>
                   <input
                     type='text'
                     value={ipAddress}
                     onChange={(e) => setIpAddress(e.target.value)}
-                    className='outline-none border py-1 px-4 ml-auto border-black rounded-lg w-2/3'
+                    className='outline-none border py-1 px-4 md:ml-auto border-black rounded-lg w-2/3'
                     placeholder='192.168.0.1'
                   />
                 </div>
-                <div className='flex gap-5 items-center'>
+                <div className='flex gap-2 flex-col md:flex-row md:items-center'>
                   <label className='whitespace-nowrap'>Name <br /> (Default: Unknown)</label>
                   <input
                     type='text'
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className='outline-none border py-1 px-4 ml-auto border-black rounded-lg w-2/3'
+                    className='outline-none border py-1 px-4 md:ml-auto border-black rounded-lg w-2/3'
                     placeholder='Unknown'
                   />
                 </div>
-                <div className='flex gap-5 items-center'>
+                <div className='flex gap-2 flex-col md:flex-row md:items-center'>
                   <label className='whitespace-nowrap'>Block Level <br /> (Default: 3)</label>
                   <input
                     type='text'
                     value={blockLevel}
                     onChange={(e) => setBlockLevel(e.target.value)}
-                    className='outline-none border py-1 px-4 ml-auto border-black rounded-lg w-2/3'
+                    className='outline-none border py-1 px-4 md:ml-auto border-black rounded-lg w-2/3'
                     placeholder='3'
                   />
                 </div>
@@ -117,11 +117,11 @@ export default function BlacklistIP() {
                 <p className='text-sm'>
                   IP block level use to block the access for the listed IP from that level...
                 </p>
-                <div className='flex gap-5 items-center'>
+                <div className='flex gap-2 flex-col md:flex-row md:items-center'>
                   <label>Block Level</label>
                   <input
                     type='text'
-                    className='outline-none border py-1 px-4 ml-auto border-black rounded-lg w-2/3'
+                    className='outline-none border py-1 px-4 md:ml-auto border-black rounded-lg w-2/3'
                     placeholder='3'
                   />
                 </div>
@@ -131,11 +131,11 @@ export default function BlacklistIP() {
 
             {activeTab === 'unblock' && (
               <div className='flex flex-col gap-6'>
-                <div className='flex gap-5 items-center'>
+                <div className='flex gap-2 flex-col md:flex-row md:items-center'>
                   <label className='whitespace-nowrap'>IP Address *</label>
                   <input
                     type='text'
-                    className='outline-none border py-1 px-4 ml-auto border-black rounded-lg w-2/3'
+                    className='outline-none border py-1 px-4 md:ml-auto border-black rounded-lg w-2/3'
                     placeholder='192.168.0.1'
                   />
                 </div>

@@ -19,7 +19,7 @@ export default function SideNav() {
           {showSideNav ? <RxCross2 size={24} /> : <RxHamburgerMenu size={24} />}
         </button>
       </div>
-    <nav className={`bg-[#1D2327] h-screen w-[200px] md:flex flex-col items-center py-10  top-12 left-0 ${showSideNav ? 'absolute': 'hidden'}`}>
+    <nav className={`bg-[#1D2327] z-50 h-screen w-[200px] md:flex flex-col items-center py-10  top-12 left-0 ${showSideNav ? 'absolute': 'hidden'}`}>
       {/* Header */}
       <div className='flex items-center gap-1 text-white text-lg w-full justify-center py-2 bg-[#2271B1]'>
         <MdLockPerson />
