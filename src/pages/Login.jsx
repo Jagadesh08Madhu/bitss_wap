@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
+  const [step, setStep] = useState(1);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [verification, setVerification] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
-  const [showVerification, setShowVerification] = useState(false);
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
@@ -17,39 +17,49 @@ export default function Login() {
     setError('');
     setIsLoading(true);
 
-    if (!showVerification) {
-      // Step 1: Send username & password to backend
-      try {
-        const response = await fetch('https://your-backend-api.com/login', {
+    try {
+      if (step === 1) {
+        // Check username
+        const res = await fetch('https://your-backend-api.com/check-username', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username }),
+        });
+        const data = await res.json();
+
+        if (res.ok && data.exists) {
+          setStep(2);
+        } else {
+          setError(data.message || 'Username not found');
+        }
+
+      } else if (step === 2) {
+        // Check password
+        const res = await fetch('https://your-backend-api.com/check-password', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ username, password }),
         });
+        const data = await res.json();
 
-        if (response.ok) {
-          // Login successful → Show verification step
-          setShowVerification(true);
+        if (res.ok && data.valid) {
+          setStep(3);
         } else {
-          // Login failed
-          const data = await response.json();
-          setError(data.message || 'Invalid username or password');
+          setError(data.message || 'Incorrect password');
         }
-      } catch (err) {
-        setError('Something went wrong. Please try again.');
-      } finally {
-        setIsLoading(false);
+
+      } else if (step === 3) {
+        if (verification === '5678') {
+          localStorage.setItem("authToken", "Logged-in");
+          navigate('/');
+        } else {
+          setError('Invalid verification code');
+        }
       }
-    } else {
-      // Step 2: Local verification code check (mock or add backend check if needed)
-      if (verification === '5678') {
-        localStorage.setItem("authToken", "Logged-in");
-        navigate('/');
-      } else {
-        setError('Invalid verification code');
-        setIsLoading(false);
-      }
+    } catch (err) {
+      setError('Something went wrong. Please try again.');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -64,33 +74,37 @@ export default function Login() {
             </div>
 
             <form onSubmit={handleSubmit} className='flex flex-col gap-5'>
-              <div className='flex flex-col gap-2'>
-                <label htmlFor="username">Username or Email Address</label>
-                <input
-                  type="text"
-                  id="username"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                  className='py-1 px-2 border-black w-full cursor-pointer border focus:border-2 transition-all ease-in-out duration-500 rounded-md focus:border-[#2271B1] outline-none'
-                  required
-                  disabled={showVerification}
-                />
-              </div>
+              {step >= 1 && (
+                <div className='flex flex-col gap-2'>
+                  <label htmlFor="username">Username or Email Address</label>
+                  <input
+                    type="text"
+                    id="username"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    className='py-1 px-2 border-black w-full cursor-pointer border focus:border-2 transition-all ease-in-out duration-500 rounded-md focus:border-[#2271B1] outline-none'
+                    required
+                    disabled={step > 1}
+                  />
+                </div>
+              )}
 
-              <div className='flex flex-col gap-2'>
-                <label htmlFor="password">Password</label>
-                <input
-                  type="password"
-                  id="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className='py-1 px-2 border-black border cursor-pointer focus:border-2 transition-all ease-in-out duration-500 w-full rounded-md focus:border-[#2271B1] outline-none'
-                  required
-                  disabled={showVerification}
-                />
-              </div>
+              {step >= 2 && (
+                <div className='flex flex-col gap-2'>
+                  <label htmlFor="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className='py-1 px-2 border-black border cursor-pointer focus:border-2 transition-all ease-in-out duration-500 w-full rounded-md focus:border-[#2271B1] outline-none'
+                    required
+                    disabled={step > 2}
+                  />
+                </div>
+              )}
 
-              {showVerification && (
+              {step === 3 && (
                 <div className='flex flex-col gap-2'>
                   <label htmlFor="verification">Verification Code</label>
                   <input
@@ -122,7 +136,7 @@ export default function Login() {
                   disabled={isLoading}
                   className='bg-[#2271B1] text-white px-4 rounded-lg py-1 disabled:opacity-50'
                 >
-                  {isLoading ? 'Please wait...' : (showVerification ? 'Verify & Login' : 'Login')}
+                  {isLoading ? 'Please wait...' : step === 1 ? 'Next' : step === 2 ? 'Verify Password' : 'Verify & Login'}
                 </button>
               </div>
             </form>
